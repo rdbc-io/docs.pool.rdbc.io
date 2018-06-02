@@ -14,11 +14,11 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-1.7.4">
     
     
       
-        <title>Creating a pool - rdbc-pool documentation - 0.0.6</title>
+        <title>Creating a pool - rdbc-pool documentation - 0.0.9</title>
       
     
     
@@ -68,7 +68,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="../.." title="rdbc-pool documentation - 0.0.6" class="md-icon md-icon--home md-header-nav__button">
+          <a href="../.." title="rdbc-pool documentation - 0.0.9" class="md-icon md-icon--home md-header-nav__button">
           </a>
         
       </div>
@@ -124,7 +124,7 @@
   
 
 
-  <a href="https://github.com/rdbc-io/rdbc-pool" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/rdbc-io/rdbc-pool/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -159,7 +159,7 @@
     
       <i class="md-icon md-icon--home md-nav__button"></i>
     
-    rdbc-pool documentation - 0.0.6
+    rdbc-pool documentation - 0.0.9
   </label>
   
     <div class="md-nav__source">
@@ -169,7 +169,7 @@
   
 
 
-  <a href="https://github.com/rdbc-io/rdbc-pool" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/rdbc-io/rdbc-pool/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -311,6 +311,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../java/java/" title="Java API user guide" class="md-nav__link">
+      Java API user guide
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -378,17 +390,12 @@
  ! limitations under the License. 
  -->
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>rdbc-pool project and this documentation is still a work in progress.
-It's not ready yet for production use.</p>
-</div>
-<p>A connection pool is a specialized <a href=""><code>ConnectionFactory</code></a> implementation that
+<p>A connection pool is a specialized <code>ConnectionFactory</code> implementation that
 maintains a set of ready to use connections and performs connection validation
 before returning them to clients. The pool delegates connection requests to 
 underlying factory provided by client during pool creation.</p>
 <h2 id="creating-a-pool">Creating a pool<a class="headerlink" href="#creating-a-pool" title="Permanent link">&para;</a></h2>
-<p>The pool is implemented in <a href=""><code>ConnectionPool</code></a> class.  To create instance of
+<p>The pool is implemented in <code>ConnectionPool</code> class.  To create instance of
 the pool use <code>ConnectionPool</code> companion object's <code>apply</code> method as follows:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -407,8 +414,9 @@ the pool use <code>ConnectionPool</code> companion object's <code>apply</code> m
 <p>To create the pool you first need to create and configure a connection factory
 provided by rdbc driver you use (see the line 4 in the above snippet) and then
 pass it as the <code>ConnectionPool#apply</code> argument (line 6). The second argument
-of the <code>apply</code> method is <a href=""><code>ConnectionPoolConfig</code></a> instance holding the pool
-configuration. See <a href="">configuration</a> chapter for available configuration options.</p>
+of the <code>apply</code> method is <code>ConnectionPoolConfig</code> instance holding the pool
+configuration. See <a href="../configuration/">configuration</a> chapter for available
+configuration options.</p>
 <h2 id="closing-a-pool">Closing a pool<a class="headerlink" href="#closing-a-pool" title="Permanent link">&para;</a></h2>
 <p>As any other <code>ConnectionFactory</code>, a pool needs to be shut down to clean up
 resources. Use <code>ConnectionPool#shutdown</code> method to do it.</p>
@@ -499,6 +507,10 @@ resources. Use <code>ConnectionPool#shutdown</code> method to do it.</p>
       
       
       <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="../../search/require.js"></script>
+      
+        <script src="../../search/search.js"></script>
       
     
     

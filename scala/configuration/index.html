@@ -14,11 +14,11 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-1.7.4">
     
     
       
-        <title>Configuration - rdbc-pool documentation - 0.0.6</title>
+        <title>Configuration - rdbc-pool documentation - 0.0.9</title>
       
     
     
@@ -68,7 +68,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="../.." title="rdbc-pool documentation - 0.0.6" class="md-icon md-icon--home md-header-nav__button">
+          <a href="../.." title="rdbc-pool documentation - 0.0.9" class="md-icon md-icon--home md-header-nav__button">
           </a>
         
       </div>
@@ -124,7 +124,7 @@
   
 
 
-  <a href="https://github.com/rdbc-io/rdbc-pool" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/rdbc-io/rdbc-pool/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -159,7 +159,7 @@
     
       <i class="md-icon md-icon--home md-nav__button"></i>
     
-    rdbc-pool documentation - 0.0.6
+    rdbc-pool documentation - 0.0.9
   </label>
   
     <div class="md-nav__source">
@@ -169,7 +169,7 @@
   
 
 
-  <a href="https://github.com/rdbc-io/rdbc-pool" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/rdbc-io/rdbc-pool/" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -311,6 +311,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../java/java/" title="Java API user guide" class="md-nav__link">
+      Java API user guide
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -378,12 +390,7 @@
  ! limitations under the License. 
  -->
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>rdbc-pool project and this documentation is still a work in progress.
-It's not ready yet for production use.</p>
-</div>
-<p>The pool configuration is represented by <a href=""><code>ConnectionPoolConfig</code></a>
+<p>The pool configuration is represented by <code>ConnectionPoolConfig</code>
 instance. Instances of this class can be created using its companion object's
 <code>apply</code> method. Every parameter of this method has some default value
 so you can use named parameters to set only some configuration options and
@@ -411,7 +418,7 @@ keep others at defaults.</p>
 <hr />
 <ul>
 <li>
-<p><strong>validateTimeout</strong></p>
+<p><strong>connectionValidateTimeout</strong></p>
 <p>Connections are always validated before being returned to clients.
  If the connection validity can't be determined in this time, the connection
  is considered invalid and is closed and eventually removed from the pool.</p>
@@ -421,7 +428,7 @@ keep others at defaults.</p>
 <hr />
 <ul>
 <li>
-<p><strong>connectTimeout</strong></p>
+<p><strong>connectionCreateTimeout</strong></p>
 <p>If opening the connection doesn't finish in this time, the attempt is aborted.
  Note that this property doesn't control the maximum time which clients will wait
  for connections &mdash; it's for pool's internal connection requests. </p>
@@ -431,7 +438,7 @@ keep others at defaults.</p>
 <hr />
 <ul>
 <li>
-<p><strong>rollbackTimeout</strong></p>
+<p><strong>connectionRollbackTimeout</strong></p>
 <p>When clients return connections to the pool, the pool rolls back any transaction
  that may be in progress so that other clients are unaffected by previous connection
  usage. This property controls maximum time that the rollback operation can take.
@@ -477,7 +484,7 @@ keep others at defaults.</p>
 <span class="k">val</span> <span class="n">pool</span> <span class="k">=</span> <span class="nc">ConnectionPool</span><span class="o">(</span><span class="n">cf</span><span class="o">,</span> <span class="nc">ConnectionPoolConfig</span><span class="o">(</span>
               <span class="n">name</span> <span class="k">=</span> <span class="s">&quot;mypool&quot;</span><span class="o">,</span>
               <span class="n">size</span> <span class="k">=</span> <span class="mi">50</span><span class="o">,</span>
-              <span class="n">validateTimeout</span> <span class="k">=</span> <span class="mf">5.</span><span class="n">seconds</span><span class="o">.</span><span class="n">timeout</span><span class="o">)</span>
+              <span class="n">connectionValidateTimeout</span> <span class="k">=</span> <span class="mf">5.</span><span class="n">seconds</span><span class="o">.</span><span class="n">timeout</span><span class="o">)</span>
            <span class="o">)</span>
 </pre></div>
                 
@@ -512,6 +519,20 @@ keep others at defaults.</p>
             </div>
           </a>
         
+        
+          <a href="../../java/java/" title="Java API user guide" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Java API user guide
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
@@ -553,6 +574,10 @@ keep others at defaults.</p>
       
       
       <script>app.initialize({url:{base:"../.."}})</script>
+      
+        <script src="../../search/require.js"></script>
+      
+        <script src="../../search/search.js"></script>
       
     
     
