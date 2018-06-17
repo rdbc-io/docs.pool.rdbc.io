@@ -38,7 +38,7 @@
     
     
       
-        <title>Installation - rdbc-pool documentation - 0.0.10</title>
+        <title>Installation - rdbc-pool documentation - 0.0.11</title>
       
     
     
@@ -106,7 +106,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../.." title="rdbc-pool documentation - 0.0.10" class="md-header-nav__button md-logo">
+        <a href="../.." title="rdbc-pool documentation - 0.0.11" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -120,7 +120,7 @@
           
             
               <span class="md-header-nav__topic">
-                rdbc-pool documentation - 0.0.10
+                rdbc-pool documentation - 0.0.11
               </span>
               <span class="md-header-nav__topic">
                 Installation
@@ -207,7 +207,7 @@
         <i class="md-icon"></i>
       
     </span>
-    rdbc-pool documentation - 0.0.10
+    rdbc-pool documentation - 0.0.11
   </label>
   
     <div class="md-nav__source">
@@ -393,6 +393,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../privacy/" title="Privacy policy" class="md-nav__link">
+      Privacy policy
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -486,12 +498,12 @@
 <p>rdbc and rdbc-pool JARs are published to
 <a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.rdbc.pool%22">Maven Central</a>
 repository. The library is currently available for Scala 2.11 and 2.12 and requires
-Java 8 runtime or later. rdbc-pool targets 0.0.80 rdbc API version.</p>
+Java 8 runtime or later. rdbc-pool targets 0.0.82 rdbc API version.</p>
 <h3 id="sbt">SBT<a class="headerlink" href="#sbt" title="Permanent link">&para;</a></h3>
 <p>For sbt projects, add the following to <code>build.sbt</code>:</p>
 <div class="codehilite"><pre><span></span><span class="n">libraryDependencies</span> <span class="o">++=</span> <span class="nc">Vector</span><span class="o">(</span>
-  <span class="s">&quot;io.rdbc&quot;</span> <span class="o">%%</span> <span class="s">&quot;rdbc-api-scala&quot;</span> <span class="o">%</span> <span class="s">&quot;0.0.80&quot;</span><span class="o">,</span>
-  <span class="s">&quot;io.rdbc.pool&quot;</span> <span class="o">%%</span> <span class="s">&quot;rdbc-pool-scala&quot;</span> <span class="o">%</span> <span class="s">&quot;0.0.10&quot;</span>
+  <span class="s">&quot;io.rdbc&quot;</span> <span class="o">%%</span> <span class="s">&quot;rdbc-api-scala&quot;</span> <span class="o">%</span> <span class="s">&quot;0.0.82&quot;</span><span class="o">,</span>
+  <span class="s">&quot;io.rdbc.pool&quot;</span> <span class="o">%%</span> <span class="s">&quot;rdbc-pool-scala&quot;</span> <span class="o">%</span> <span class="s">&quot;0.0.11&quot;</span>
 <span class="o">)</span>
 </pre></div>
 
@@ -499,14 +511,14 @@ Java 8 runtime or later. rdbc-pool targets 0.0.80 rdbc API version.</p>
 <h3 id="gradle">Gradle<a class="headerlink" href="#gradle" title="Permanent link">&para;</a></h3>
 <p>For Gradle projects, add the following to the <code>dependencies</code> section of <code>build.gradle</code>:</p>
 <p>Scala 2.12</p>
-<div class="codehilite"><pre><span></span><span class="n">compile</span> <span class="nl">group:</span> <span class="s1">&#39;io.rdbc&#39;</span><span class="o">,</span> <span class="nl">name:</span> <span class="s1">&#39;rdbc-api-scala_2.12&#39;</span><span class="o">,</span> <span class="nl">version:</span> <span class="s1">&#39;0.0.80&#39;</span>
-<span class="n">compile</span> <span class="nl">group:</span> <span class="s1">&#39;io.rdbc.pool&#39;</span><span class="o">,</span> <span class="nl">name:</span> <span class="s1">&#39;rdbc-pool-scala_2.12&#39;</span><span class="o">,</span> <span class="nl">version:</span> <span class="s1">&#39;0.0.10&#39;</span>
+<div class="codehilite"><pre><span></span><span class="n">compile</span> <span class="nl">group:</span> <span class="s1">&#39;io.rdbc&#39;</span><span class="o">,</span> <span class="nl">name:</span> <span class="s1">&#39;rdbc-api-scala_2.12&#39;</span><span class="o">,</span> <span class="nl">version:</span> <span class="s1">&#39;0.0.82&#39;</span>
+<span class="n">compile</span> <span class="nl">group:</span> <span class="s1">&#39;io.rdbc.pool&#39;</span><span class="o">,</span> <span class="nl">name:</span> <span class="s1">&#39;rdbc-pool-scala_2.12&#39;</span><span class="o">,</span> <span class="nl">version:</span> <span class="s1">&#39;0.0.11&#39;</span>
 </pre></div>
 
 
 <p>Scala 2.11</p>
-<div class="codehilite"><pre><span></span><span class="n">compile</span> <span class="nl">group:</span> <span class="s1">&#39;io.rdbc&#39;</span><span class="o">,</span> <span class="nl">name:</span> <span class="s1">&#39;rdbc-api-scala_2.11&#39;</span><span class="o">,</span> <span class="nl">version:</span> <span class="s1">&#39;0.0.80&#39;</span>
-<span class="n">compile</span> <span class="nl">group:</span> <span class="s1">&#39;io.rdbc.pool&#39;</span><span class="o">,</span> <span class="nl">name:</span> <span class="s1">&#39;rdbc-pool-scala_2.11&#39;</span><span class="o">,</span> <span class="nl">version:</span> <span class="s1">&#39;0.0.10&#39;</span>
+<div class="codehilite"><pre><span></span><span class="n">compile</span> <span class="nl">group:</span> <span class="s1">&#39;io.rdbc&#39;</span><span class="o">,</span> <span class="nl">name:</span> <span class="s1">&#39;rdbc-api-scala_2.11&#39;</span><span class="o">,</span> <span class="nl">version:</span> <span class="s1">&#39;0.0.82&#39;</span>
+<span class="n">compile</span> <span class="nl">group:</span> <span class="s1">&#39;io.rdbc.pool&#39;</span><span class="o">,</span> <span class="nl">name:</span> <span class="s1">&#39;rdbc-pool-scala_2.11&#39;</span><span class="o">,</span> <span class="nl">version:</span> <span class="s1">&#39;0.0.11&#39;</span>
 </pre></div>
 
 
@@ -516,12 +528,12 @@ Java 8 runtime or later. rdbc-pool targets 0.0.80 rdbc API version.</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;dependency&gt;</span>
   <span class="nt">&lt;groupId&gt;</span>io.rdbc<span class="nt">&lt;/groupId&gt;</span>
   <span class="nt">&lt;artifactId&gt;</span>rdbc-api-scala_2.12<span class="nt">&lt;/artifactId&gt;</span>
-  <span class="nt">&lt;version&gt;</span>0.0.80<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.82<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 <span class="nt">&lt;dependency&gt;</span>
   <span class="nt">&lt;groupId&gt;</span>io.rdbc.pool<span class="nt">&lt;/groupId&gt;</span>
   <span class="nt">&lt;artifactId&gt;</span>rdbc-pool-scala_2.12<span class="nt">&lt;/artifactId&gt;</span>
-  <span class="nt">&lt;version&gt;</span>0.0.10<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.11<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 </pre></div>
 
@@ -530,12 +542,12 @@ Java 8 runtime or later. rdbc-pool targets 0.0.80 rdbc API version.</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;dependency&gt;</span>
   <span class="nt">&lt;groupId&gt;</span>io.rdbc<span class="nt">&lt;/groupId&gt;</span>
   <span class="nt">&lt;artifactId&gt;</span>rdbc-api-scala_2.11<span class="nt">&lt;/artifactId&gt;</span>
-  <span class="nt">&lt;version&gt;</span>0.0.80<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.82<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 <span class="nt">&lt;dependency&gt;</span>
   <span class="nt">&lt;groupId&gt;</span>io.rdbc.pool<span class="nt">&lt;/groupId&gt;</span>
   <span class="nt">&lt;artifactId&gt;</span>rdbc-pool-scala_2.11<span class="nt">&lt;/artifactId&gt;</span>
-  <span class="nt">&lt;version&gt;</span>0.0.10<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.11<span class="nt">&lt;/version&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 </pre></div>
                 
@@ -626,6 +638,8 @@ Java 8 runtime or later. rdbc-pool targets 0.0.80 rdbc API version.</p>
       <script src="../../assets/javascripts/application.b438e6c5.js"></script>
       
       <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
+      
+        <script src="../../javascripts/extra.js"></script>
       
     
     

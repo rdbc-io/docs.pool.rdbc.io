@@ -89,6 +89,26 @@
             "location": "/java/java/",
             "text": "Java API is available but not yet documented.",
             "title": "Java API user guide"
+        },
+        {
+            "location": "/privacy/",
+            "text": "Data collection\n\u00b6\n\n\nThis site uses Google Analytics to collect information. No personally identifiable\ninformation is collected. This site uses Google Analytics IP address anonymization feature.\n\n\nData processing\n\u00b6\n\n\nThe site owner uses the collected data to understand how many people visit\nthe site pages and where they came from.\n\n\nOpt-out from tracking\n\u00b6\n\n\nClick \nhere\n to opt-out of the\ntracking. This will create a cookie to remember the opt-out for your browser.",
+            "title": "Privacy policy"
+        },
+        {
+            "location": "/privacy/#data-collection",
+            "text": "This site uses Google Analytics to collect information. No personally identifiable\ninformation is collected. This site uses Google Analytics IP address anonymization feature.",
+            "title": "Data collection"
+        },
+        {
+            "location": "/privacy/#data-processing",
+            "text": "The site owner uses the collected data to understand how many people visit\nthe site pages and where they came from.",
+            "title": "Data processing"
+        },
+        {
+            "location": "/privacy/#opt-out-from-tracking",
+            "text": "Click  here  to opt-out of the\ntracking. This will create a cookie to remember the opt-out for your browser.",
+            "title": "Opt-out from tracking"
         }
     ]
 }

@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,25 +13,25 @@
         
     <url>
      <loc>/scala/installation/</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/scala/creating/</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/scala/features/</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/scala/configuration/</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -40,7 +40,15 @@
     
     <url>
      <loc>/java/java/</loc>
-     <lastmod>2018-06-01</lastmod>
+     <lastmod>2018-06-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/privacy/</loc>
+     <lastmod>2018-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
